@@ -4,8 +4,14 @@
 void main(void)
 {
 
+    char Password[15]; 
     char buff[15];
+    char flag = 'F';
+    
+    printf("\nFlag: %c\n", flag);
     int pass = 0;
+
+    strncpy(Password,"StackSmashed", 15);
 
     printf("\nWelcome to Secure Server.\n");
     printf("\nEnter the password: ");
@@ -19,7 +25,7 @@ void main(void)
     //? if (flag == 1 || -1) --> Wrong Pass
     //? else (flag == 0) --> Correct Pass
 
-    if (strcmp(buff, "StackSmashed"))
+    if (strncmp(buff, Password, 15))
     {
         printf("\nWrong Password\n");
     }
@@ -32,6 +38,7 @@ void main(void)
     {
         //! Now Give root or admin rights to User
         printf("\nROOT PRIVILEGES GIVEN TO THE USER!");
-        printf("\nWELCOME TO THE SECURE SERVER...\nC:\\Users>\n\n");
+        printf("\nWELCOME TO THE SECURE SERVER...\nC:\\Users>\n");
     }
+    printf("\nFlag: %c", flag);
 }
