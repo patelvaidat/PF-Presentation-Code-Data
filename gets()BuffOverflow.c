@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <string.h>
+#include <stdio.h> //printf(), scanf()
+#include <string.h> // strncpy, strncmp function
 
 void main(void)
 {
